@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        
-    </style>
 </head>
 <body>
-    <h1>This is JavaScript Program</h1>
-    <h2>The querySelectorAll() Method</h2>
-    <h3>Change the background color of all p elements :</h3>
-    <h1></h1>
+    <h1> Document .queryselecterAll method</h1>
+    <h2>The document object</h2>
+    <h3>change backgroundColor of p elements</h3>
+    <div>A div element</div>
+    <p>A element.</p>
+    <p>A element.</p>
+    <div class="example">
+        <p>A p element inside a div element</p>
+    </div>
+    <script>
+        const nodeList =document.querySelectorAll("p");
+        for(let i=0; i<nodeList.length;i++){
+            nodeList[i].style.backgroundColor="pink";
+        }
+
+    </script>
+    
+    
 </body>
 </html>
