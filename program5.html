@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Document object</h1>
+    <h2>The getElementByclassName() Method</h2>
+    <p>Change the text of the first element with class="example":</p>
+    <div class="hello">Name</div>
+    <div class="hello">Name1</div>
+    <script>
+        const collection = document.getElementsByClassName("hello");
+        collection[0].innerHTML="Hello world!";
+        collection[1].innerHTML="CPIT";
+    </script>
+</body>
+</html>
